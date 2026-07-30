@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta: cancha de noche — madera oscura, marcador ámbar, acento cancha */
+  --color-court-950: #0b0e14;
+  --color-court-900: #10141d;
+  --color-court-800: #171d29;
+  --color-court-700: #232b3b;
+  --color-court-600: #333e54;
+  --color-court-400: #6b7891;
+  --color-court-200: #c3cadb;
+
+  --color-scoreboard: #f2a93b;   /* ámbar marcador */
+  --color-scoreboard-dim: #8a611f;
+  --color-hardwood: #d6a15a;     /* madera de parquet */
+  --color-win: #3ecf8e;
+  --color-loss: #e6584f;
+
+  --font-display: "Oswald", "Inter", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: var(--color-court-950);
+  color: var(--color-court-200);
+  font-family: var(--font-body);
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(242, 169, 59, 0.06), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(62, 207, 142, 0.05), transparent 35%);
+}
